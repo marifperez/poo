@@ -4,6 +4,8 @@
  */
 package MODELO;
 
+import BancoDados.Constantes;
+
 /**
  *
  * @author mari
@@ -42,11 +44,11 @@ public class Substituto extends Docente
     {
         if ("S1".equals(nivel)) 
         {
-            return 0.05;
+            return Constantes.S1;
             
         } else if ("S2".equals(nivel)) 
         {
-            return 0.10;
+            return Constantes.S2;
             
         } else 
         {

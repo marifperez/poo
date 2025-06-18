@@ -4,6 +4,8 @@
  */
 package MODELO;
 
+import BancoDados.Constantes;
+
 /**
  *
  * @author mari
@@ -46,22 +48,22 @@ public class Efetivo extends Docente {
         
         if ("D1".equals(nivel)) 
         {
-            adicional = 0.05;
+            adicional = Constantes.D1;
             
         } else if ("D2".equals(nivel)) 
         {
-            adicional = 0.10;
+            adicional = Constantes.D2;
             
         } else if ("D3".equals(nivel)) 
         {
-            adicional = 0.20;
+            adicional = Constantes.D3;
             
         } else 
         {
             System.err.println("Aviso: Nivel de efetivo invalido (" + nivel + "). Considerando 0% de adicional.");
         }
         
-        return adicional + 0.05; // 5% fixo p efetivos
+        return adicional + Constantes.EXTRA_EFETIVO; // 5% fixo p efetivos
     }
 
     /**

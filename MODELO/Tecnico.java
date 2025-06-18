@@ -4,6 +4,8 @@
  */
 package MODELO;
 
+import BancoDados.Constantes;
+
 /**
  *
  * @author mari
@@ -44,11 +46,11 @@ public class Tecnico extends Funcionario
     {
         if ("T1".equals(nivel)) 
         {
-            return 0.10;
+            return Constantes.T1;
             
         } else if ("T2".equals(nivel)) 
         {
-            return 0.20;
+            return Constantes.T2;
             
         } else 
         {
